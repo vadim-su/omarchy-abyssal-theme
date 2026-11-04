@@ -31,11 +31,31 @@ All app configs (terminals, Hyprland, Neovim, btop, browser, etc.) are generated
 
 All backgrounds were generated with OpenAI `gpt-image-2.5-flare` and upscaled to 4K locally with [Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN) (`realesrgan-ncnn-vulkan`).
 
+## Fastfetch logo
+
+The theme ships `fastfetch.png`, a bioluminescent koi pair. Omarchy does not theme fastfetch itself, but `omarchy theme set` copies the whole theme folder to `~/.local/state/omarchy/current/theme/`, so the image is always at:
+
+```
+~/.local/state/omarchy/current/theme/fastfetch.png
+```
+
+To use it, point the logo in `~/.config/fastfetch/config.jsonc` at that path (a terminal with image support, such as Kitty or Ghostty, is required):
+
+```jsonc
+"logo": {
+  "type": "kitty-direct",
+  "source": "~/.local/state/omarchy/current/theme/fastfetch.png",
+  "width": 40,
+  "height": 20
+}
+```
+
 ## Files
 
 ```
 colors.toml     # palette, the single source of truth
 icons.theme     # GTK icon theme
 preview.png     # desktop screenshot for the theme picker
+fastfetch.png   # optional fastfetch logo
 backgrounds/    # wallpapers
 ```
