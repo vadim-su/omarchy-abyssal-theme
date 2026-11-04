@@ -2,7 +2,7 @@
 
 A deep-sea theme for [Omarchy](https://omarchy.org/): near-black ocean blues lit by bioluminescent cyan, with coral, plankton and lantern-fish accents.
 
-![Abyssal preview](preview.webp)
+![Abyssal preview](preview.png)
 
 ## Install
 
@@ -29,13 +29,13 @@ All app configs (terminals, Hyprland, Neovim, btop, browser, etc.) are generated
 
 22 wallpapers of an imagined abyss: trenches, vents, alien reefs, glass siphonophores, lantern swarms and the creatures that hunt there. Cycle them with `omarchy theme bg next`.
 
-All backgrounds and the preview artwork were generated with OpenAI `gpt-image-2.5-flare` and upscaled to 4K locally with [Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN) (`realesrgan-ncnn-vulkan`).
+All backgrounds were generated with OpenAI `gpt-image-2.5-flare` and upscaled to 4K locally with [Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN) (`realesrgan-ncnn-vulkan`).
 
 ## Files
 
 ```
 colors.toml     # palette, the single source of truth
 icons.theme     # GTK icon theme
-preview.webp    # screenshot for the theme picker
+preview.png     # desktop screenshot for the theme picker
 backgrounds/    # wallpapers
 ```
